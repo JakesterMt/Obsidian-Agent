@@ -6,3 +6,75 @@ available in the app when your plugin is enabled.
 If your plugin does not need CSS, delete this file.
 
 */
+
+.agent-chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1rem;
+}
+
+.agent-chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 1rem;
+    padding-right: 0.5rem;
+}
+
+.agent-chat-message {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border-radius: 8px;
+    max-width: 80%;
+}
+
+.agent-chat-message.user {
+    background-color: var(--interactive-accent);
+    color: var(--text-on-accent);
+    margin-left: auto;
+}
+
+.agent-chat-message.assistant {
+    background-color: var(--background-secondary);
+    margin-right: auto;
+}
+
+.agent-chat-message-content {
+    margin-bottom: 0.25rem;
+    word-wrap: break-word;
+}
+
+.agent-chat-message-timestamp {
+    font-size: 0.75rem;
+    opacity: 0.7;
+}
+
+.agent-chat-input-form {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    background-color: var(--background-secondary);
+    border-radius: 8px;
+}
+
+.agent-chat-input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 4px;
+    background-color: var(--background-primary);
+    color: var(--text-normal);
+}
+
+.agent-chat-submit {
+    padding: 0.5rem 1rem;
+    background-color: var(--interactive-accent);
+    color: var(--text-on-accent);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.agent-chat-submit:hover {
+    background-color: var(--interactive-accent-hover);
+}
